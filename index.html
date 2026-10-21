@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoApp</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+<div class=" blur"></div>
+ <header>
+  
+   <div class="img-header">
+    <img src="/assets/images/todo.svg" alt="">
+    </div>
+  </header>
+  <section class="container">
+    <div class="form-container">
+      <form class="todo-form">
+        <input type="text" class="todo-input">
+        <button class="add-todo" type="submit">
+          <i class="fas fa-plus-circle"></i>
+        </button>
+      </form>
+      <div class="select">
+        <select class="filter-todos" name="todos">
+          <option value="all">همه</option>
+          <option value="completed">تکمیل شده</option>
+          <option value="uncompleted">تکمیل نشده</option>
+        </select>
+      </div>
+    
+    </div>
+    <div class="todo-container">
+      <ul class="todolist"></ul>
+    </div>
+  </section>
+  <div class=" modal">
+    <div class="modal__content">
+      <label for="newtitle">عنوان جدید  شما</label>
+      <form action="" class="edit-form">
+      <input type="text" class="new-title">
+       <button class="close__edited"   data-todo-id=${todo.id}><i class="fa-solid fa-pencil"></i><button></button>
+      </form>
+     
+    </div>
+  </div>
+  <script src="./js/todolist.js"></script>
+
+</body>
+</html>
